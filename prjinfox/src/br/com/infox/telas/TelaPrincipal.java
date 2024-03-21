@@ -12,9 +12,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import java.sql.*;
 import java.util.HashMap;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.view.JasperViewer;
 
 
 /**
@@ -257,8 +254,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
             //imprimindo relatório com framework JasperReports
             try {       
 // EU PAREI O PROJETO AQUI//             
-                JasperPrint print = JasperFillManager.fillReport("C:/Users/gabri/JaspersoftWorkspace/MyReports/PapelFolha.jasper" , null, conexao);
-                JasperViewer.viewReport(print,false);          
+//                JasperPrint print = JasperFillManager.fillReport("C:/Users/gabri/JaspersoftWorkspace/MyReports/PapelFolha.jasper" , null, conexao);
+//              JasperViewer.viewReport(print,false);          
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, e);
             }
